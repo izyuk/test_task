@@ -202,10 +202,10 @@ body {
     width: 100%;
     margin: 30px auto 0;
     .tabs_wrapper{
-      margin-left: 10px;
+      margin-left: 50px;
       display: flex;
       width: 100%;
-      max-width: 60%;
+      max-width: 70%;
       justify-content: space-between;
       /**/
       padding: 0;
@@ -219,6 +219,7 @@ body {
         border-radius: 3px;
         padding: 15px 60px 15px 30px;
         cursor: pointer;
+        flex-basis: 225px;
         &:hover, &.active{
           border: 1px solid green;
           background: green;
@@ -228,7 +229,7 @@ body {
     }
     .content_wrapper{
       display: flex;
-      margin-left: 30px;
+      margin-left: 70px;
       article{
         flex: 1;
         .col_name{
@@ -402,17 +403,29 @@ body {
   .container{
     .tabs{
       .tabs_wrapper{
-        max-width: 70%;
+        max-width: 80%;
       }
     }
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .container{
     .tabs{
       .tabs_wrapper{
-        max-width: 80%;
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .container{
+    .tabs{
+      .tabs_wrapper{
+        margin: 10px 0;
+        padding: 0 10px;
+        max-width: 100%;
       }
     }
   }
@@ -422,13 +435,13 @@ body {
   .container{
     .tabs{
       .tabs_wrapper{
-        max-width: 100%;
-        margin: 10px 0;
-        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
         li{
           padding: 15px 0;
           text-align: center;
           width: calc(100% / 5);
+          margin: 10px auto 0;
         }
       }
     }
@@ -444,6 +457,9 @@ body {
           flex-direction: column;
           width: calc(100% / 5);
           align-items: center;
+          .wrapper{
+            width: 90%;
+          }
           p{
             text-align: center;
           }
@@ -457,11 +473,8 @@ body {
   .container {
     .tabs {
       .tabs_wrapper {
-        display: flex;
-        flex-wrap: wrap;
         li {
           flex-basis: 150px;
-          margin: 10px auto 0;
         }
       }
       .content_wrapper {

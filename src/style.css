@@ -197,10 +197,10 @@ body {
   margin: 30px auto 0;
 }
 .container .tabs .tabs_wrapper {
-  margin-left: 10px;
+  margin-left: 50px;
   display: flex;
   width: 100%;
-  max-width: 60%;
+  max-width: 70%;
   justify-content: space-between;
   /**/
   padding: 0;
@@ -215,6 +215,7 @@ body {
   border-radius: 3px;
   padding: 15px 60px 15px 30px;
   cursor: pointer;
+  flex-basis: 225px;
 }
 .container .tabs .tabs_wrapper li:hover,
 .container .tabs .tabs_wrapper li.active {
@@ -224,7 +225,7 @@ body {
 }
 .container .tabs .content_wrapper {
   display: flex;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 .container .tabs .content_wrapper article {
   flex: 1;
@@ -386,24 +387,31 @@ body {
 }
 @media (max-width: 1430px) {
   .container .tabs .tabs_wrapper {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .container .tabs .tabs_wrapper {
-    max-width: 80%;
+    max-width: 90%;
+  }
+}
+@media (max-width: 1110px) {
+  .container .tabs .tabs_wrapper {
+    margin: 10px 0;
+    padding: 0 10px;
+    max-width: 100%;
   }
 }
 @media (max-width: 1050px) {
   .container .tabs .tabs_wrapper {
-    max-width: 100%;
-    margin: 10px 0;
-    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .container .tabs .tabs_wrapper li {
     padding: 15px 0;
     text-align: center;
     width: calc(100% / 5);
+    margin: 10px auto 0;
   }
 }
 @media (max-width: 970px) {
@@ -413,18 +421,16 @@ body {
     width: calc(100% / 5);
     align-items: center;
   }
+  .container .tabs .content_wrapper article .wrapper {
+    width: 90%;
+  }
   .container .tabs .content_wrapper article p {
     text-align: center;
   }
 }
 @media (max-width: 850px) {
-  .container .tabs .tabs_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .container .tabs .tabs_wrapper li {
     flex-basis: 150px;
-    margin: 10px auto 0;
   }
   .container .tabs .content_wrapper article {
     display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import {ContactInfo, AddressInfo} from './content';
+import ContactInfo, {AddressInfo, info} from './content';
 export default () => (
     <Tabs className="tabs">
         <TabList className="tabs_wrapper">
@@ -10,7 +10,7 @@ export default () => (
             <Tab>Налаштування</Tab>
         </TabList>
         <TabPanel>
-            <ContactInfo/>
+            <ContactInfo phone={info.phone}/>
         </TabPanel>
         <TabPanel>
             <AddressInfo/>
